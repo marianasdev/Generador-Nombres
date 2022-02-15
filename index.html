@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de nombres</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <form action="#"  id="cajamain" >
+        <h1>Generador de Nombres</h1>
+        <div class="flexbox-container">
+            <div id="columna1" >
+                <h3>Ingrese País</h3>
+                    <select name="paises" id="origen">
+                        <option value="seleccione">--Seleccione--</option>
+                        <optgroup label="América">
+                            <option value="CA">Canada</option>
+                            <option value="BR">Brasil</option>
+                            <option value="US">Estados Unidos</option>
+                        </optgroup>
+                        <optgroup label="Europa">
+                            <option value="FR">Francia</option>
+                            <option value="ES">España</option>
+                            }<option value="DE">Alemania</option>
+                            <option value="IE">Irlanda</option>
+                            <option value="NL">Paises Bajos</option>
+                            <option value="NO">Noruega</option>
+                            <option value="NL">Paises Bajos</option>
+                            <option value="GB">Inglaterra</option>
+                            <option value="FI">Finlandia</option>
+                        </optgroup>
+
+                        <optgroup label="Asia">
+                            <option value="IR">Iran</option>
+                            <option value="TR">Turquia</option>
+                        </optgroup>
+                        
+                        <optgroup label="Oceania">
+                            <option value="NS">Nueva Zelanda</option>
+                            <option value="AU">Australia</option>
+                        </optgroup>
+                    </select>
+
+
+                <h3>Ingrese Género</h3>
+                <select name="genero" id="genero">
+                    <option value="seleccione">--Seleccione--</option>
+                    <option value="male">Hombre</option>
+                    <option value="female">Mujer</option>            
+                </select>
+
+                <h3>Ingrese cantidad de nombres</h3>
+                <select name="cantidadnombres" id="numero">
+                    <option value="seleccione">--Seleccione--</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option> 
+                    <option value="5">5</option>                       
+                </select>
+                <br><br>
+
+                <button id="btn" class="w3-button w3-black">Buscar</button>
+
+             </div>
+
+             <div id="columna2" >
+                
+                <div id="nombres">
+                    <p id="nombreselejidos"> 
+                    
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
